@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Sinner's Dice — мрачная roguelike-дуэль на костях с рероллами, флипами, комбинациями, картой забега и предметами." />
+  <title>The Sinner's Dice — Demo</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="На главную">
+      <span class="brand-die" aria-hidden="true">◆</span>
+      <span>The Sinner's Dice</span>
+    </a>
+    <nav class="nav" aria-label="Навигация">
+      <a href="#about">Об игре</a>
+      <a href="#mechanics">Механики</a>
+      <a href="#gameplay">Геймплей</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#download">Демо</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-full">
+      <video class="hero-video" src="media/gameplay_cut.mp4" poster="media/screenshots/menu.webp" autoplay muted loop playsinline></video>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">Кости грешника</p>
+        <h1>The Sinner's Dice</h1>
+        <p class="hero-lead">Roguelike-дуэль на костях, где случайный бросок — только начало. Выбирай маршрут, собирай комбинации, управляй риском и переживай поражения, чтобы понять правила глубже.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="download/TheSinnersDice_Demo.zip" download>
+            <span>Скачать демоверсию</span>
+          </a>
+          <a class="btn btn-ghost" href="#gameplay">Смотреть геймплей</a>
+        </div>
+        <ul class="hero-tags" aria-label="Ключевые особенности">
+          <li>Roguelike</li>
+          <li>Dice duel</li>
+          <li>Single-player</li>
+          <li>Windows ZIP</li>
+        </ul>
+      </div>
+
+      <aside class="crt-card reveal delay-1" aria-label="Короткая видеонарезка геймплея">
+        <div class="crt-topline">
+          <span>GAMEPLAY FEED</span>
+          <span class="rec-dot">REC</span>
+        </div>
+        <div class="crt-screen">
+          <video src="media/gameplay_cut.mp4" poster="media/screenshots/dice_table.webp" autoplay muted loop playsinline></video>
+        </div>
+        <div class="crt-caption">карта → бой → рероллы → победа → награда</div>
+      </aside>
+    </section>
+
+    <section id="about" class="section section-grid">
+      <div class="section-copy reveal">
+        <p class="eyebrow">Об игре</p>
+        <h2>Дуэльная игра в кости внутри мрачного roguelike-забега</h2>
+        <p>Игрок проходит серию столкновений с противниками, продвигается по карте актов, заходит в магазин, собирает предметы и меняет свою сборку. Центральная сцена — комната с алтарём, зеркалом, телевизором и телефоном, где каждый объект работает как часть интерфейса.</p>
+        <p>В бою выпавшие значения не решают всё сами. Рероллы помогают изменить результат, флипы — переставить соседние кости, а комбинации превращают бросок в тактическую задачу.</p>
+      </div>
+
+      <div class="loop-panel reveal delay-1">
+        <h3>Цикл забега</h3>
+        <ol class="run-loop">
+          <li><span>01</span><strong>Выбор маршрута</strong><small>карта, события, риск</small></li>
+          <li><span>02</span><strong>Бой на костях</strong><small>раунды, рероллы, флипы</small></li>
+          <li><span>03</span><strong>Награда</strong><small>валюта, предметы, кости</small></li>
+          <li><span>04</span><strong>Развитие сборки</strong><small>магазин и подготовка</small></li>
+          <li><span>05</span><strong>Поражение / новый забег</strong><small>ошибка становится опытом</small></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="mechanics" class="section mechanics-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Механики</p>
+        <h2>Случайность остаётся на столе, но игрок получает инструменты контроля</h2>
+      </div>
+
+      <div class="mechanics-grid">
+        <article class="mechanic-card reveal">
+          <span class="icon">⚂</span>
+          <h3>Броски костей</h3>
+          <p>Раунд начинается с броска, но итог зависит от того, как игрок использует выпавшие значения.</p>
+        </article>
+        <article class="mechanic-card reveal delay-1">
+          <span class="icon">↻</span>
+          <h3>Рероллы</h3>
+          <p>Ограниченные перебросы позволяют исправить неудачные значения и сохранить шанс на сильную комбинацию.</p>
+        </article>
+        <article class="mechanic-card reveal delay-2">
+          <span class="icon">⇄</span>
+          <h3>Флипы</h3>
+          <p>Перестановка соседних костей меняет структуру ряда и помогает собрать нужный паттерн.</p>
+        </article>
+        <article class="mechanic-card reveal">
+          <span class="icon">✦</span>
+          <h3>Комбинации</h3>
+          <p>Значение имеет не только сумма, но и порядок костей, редкость набора и формула подсчёта.</p>
+        </article>
+        <article class="mechanic-card reveal delay-1">
+          <span class="icon">⌁</span>
+          <h3>Карта забега</h3>
+          <p>Три тропы, развилки, магазины, события и элитные бои заставляют планировать путь заранее.</p>
+        </article>
+        <article class="mechanic-card reveal delay-2">
+          <span class="icon">▣</span>
+          <h3>Предметы</h3>
+          <p>Настольные предметы и кости меняют стиль прохождения и помогают адаптироваться к противникам.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gameplay" class="section video-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Геймплей</p>
+        <h2>Короткий обзор демоверсии</h2>
+        <p>Нарезка показывает старт, карту на телевизоре, боевой стол, работу с костями и магазин прототипа.</p>
+      </div>
+
+      <div class="video-frame reveal">
+        <div class="crt-topline">
+          <span>DEMO OVERVIEW</span>
+          <span>38 SEC</span>
+        </div>
+        <video src="media/gameplay_cut.mp4" poster="media/screenshots/map.webp" controls playsinline></video>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Скриншоты</p>
+        <h2>Ключевые состояния прототипа</h2>
+      </div>
+
+      <div class="gallery">
+        <button class="shot reveal" type="button" data-full="media/screenshots/menu.webp" aria-label="Открыть скриншот: главное меню">
+          <img src="media/screenshots/menu.webp" alt="Главное меню The Sinner's Dice" />
+          <span>Главное меню</span>
+        </button>
+        <button class="shot reveal delay-1" type="button" data-full="media/screenshots/map.webp" aria-label="Открыть скриншот: карта забега">
+          <img src="media/screenshots/map.webp" alt="Карта забега на телевизоре" />
+          <span>Карта забега</span>
+        </button>
+        <button class="shot reveal delay-2" type="button" data-full="media/screenshots/round_start.webp" aria-label="Открыть скриншот: начало боя">
+          <img src="media/screenshots/round_start.webp" alt="Начало боевого раунда" />
+          <span>Начало боя</span>
+        </button>
+        <button class="shot reveal" type="button" data-full="media/screenshots/dice_table.webp" aria-label="Открыть скриншот: боевой стол">
+          <img src="media/screenshots/dice_table.webp" alt="Боевой стол с костями" />
+          <span>Боевой стол</span>
+        </button>
+        <button class="shot reveal delay-1" type="button" data-full="media/screenshots/shop.webp" aria-label="Открыть скриншот: магазин">
+          <img src="media/screenshots/shop.webp" alt="Экран магазина в прототипе" />
+          <span>Магазин</span>
+        </button>
+        <button class="shot reveal delay-2" type="button" data-full="media/screenshots/reward.webp" aria-label="Открыть скриншот: выбор награды">
+          <img src="media/screenshots/reward.webp" alt="Выбор награды после боя" />
+          <span>Награда</span>
+        </button>
+      </div>
+    </section>
+
+
+    <section id="roadmap" class="section roadmap-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Roadmap</p>
+        <h2>План развития проекта</h2>
+        <p>Демоверсия фиксирует базовый игровой цикл, а следующие этапы расширяют кампанию, контент и режимы прохождения.</p>
+      </div>
+
+      <div class="roadmap-track">
+        <article class="roadmap-item reveal is-current">
+          <div class="roadmap-marker">01</div>
+          <div class="roadmap-card">
+            <span class="roadmap-status">Доступно сейчас</span>
+            <h3>Ранняя демоверсия</h3>
+            <p>Публикация первого билда на сайте: комната, карта, базовый бой на костях, рероллы, флипы, предметы и магазин.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item reveal delay-1">
+          <div class="roadmap-marker">02</div>
+          <div class="roadmap-card">
+            <span class="roadmap-status">Следующий этап</span>
+            <h3>Развитие базовой версии</h3>
+            <p>Полировка интерфейса, настройка баланса, улучшение обратной связи и расширение первого набора противников.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item reveal delay-2">
+          <div class="roadmap-marker">03</div>
+          <div class="roadmap-card">
+            <span class="roadmap-status">Кампания</span>
+            <h3>Добавление второго акта</h3>
+            <p>Новая карта акта, усложнённые противники, новые элитные бои, отдельный босс и усиление давления на сборку игрока.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item reveal">
+          <div class="roadmap-marker">04</div>
+          <div class="roadmap-card">
+            <span class="roadmap-status">Финал истории</span>
+            <h3>Добавление третьего акта</h3>
+            <p>Линейная финальная тропа, ключевой сюжетный энкаунтер, бой с Тенью и фиксация плохой или хорошей концовки.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item reveal delay-1">
+          <div class="roadmap-marker">05</div>
+          <div class="roadmap-card">
+            <span class="roadmap-status">Публичное тестирование</span>
+            <h3>Открытая бета в Steam</h3>
+            <p>Публикация тестовой версии, сбор отзывов игроков, исправление ошибок и уточнение темпа прохождения.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item reveal delay-2">
+          <div class="roadmap-marker">06</div>
+          <div class="roadmap-card">
+            <span class="roadmap-status">Контент</span>
+            <h3>Новые предметы и кости</h3>
+            <p>Расширение набора настольных предметов, альтернативных костей, событий и синергий для более разных сборок.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item reveal">
+          <div class="roadmap-marker">07</div>
+          <div class="roadmap-card">
+            <span class="roadmap-status">Реиграбельность</span>
+            <h3>Бесконечный режим и испытания</h3>
+            <p>Отдельные модификаторы правил, усложнённые маршруты, особые условия победы и режим для игры после прохождения кампании.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item reveal delay-1">
+          <div class="roadmap-marker">08</div>
+          <div class="roadmap-card">
+            <span class="roadmap-status">Релиз</span>
+            <h3>Полный релиз в Steam</h3>
+            <p>Завершённая кампания, настроенный баланс, финальный набор контента, стабильная сборка и полноценная страница магазина.</p>
+          </div>
+        </article>
+
+        <article class="roadmap-item reveal delay-2">
+          <div class="roadmap-marker">09</div>
+          <div class="roadmap-card">
+            <span class="roadmap-status">После релиза</span>
+            <h3>DLC: история Предателя</h3>
+            <p>Дополнительная сюжетная линия с событиями от лица Предателя и новым взглядом на ключевые эпизоды основной истории.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="download" class="section download-section">
+      <div class="download-card reveal">
+        <p class="eyebrow">Демоверсия</p>
+        <h2>Скачать The Sinner's Dice Demo</h2>
+        <p>ZIP-архив для Windows. Распакуйте архив в отдельную папку и запустите исполняемый файл игры.</p>
+        <a class="btn btn-primary btn-large" href="download/TheSinnersDice_Demo.zip" download>Скачать демоверсию</a>
+        <div class="install-steps" aria-label="Инструкция запуска">
+          <span>1. Скачать ZIP</span>
+          <span>2. Распаковать</span>
+          <span>3. Запустить .exe</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>The Sinner's Dice</span>
+    <span>Demo page</span>
+  </footer>
+
+  <div class="lightbox" data-lightbox aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Закрыть просмотр">×</button>
+    <img src="" alt="Увеличенный скриншот" />
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
